@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html ng-app="chatie">
-<head>
-  <title>Chatie</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div ng-view>
-  <%= yield %>
-  </div>
-</body>
+<html lang="en" ng-app="chatie">
+	<head>
+		<meta charset="utf-8">
+	  <title>JobBoardU</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Juan Santa Cruz">
+
+	  <%= stylesheet_link_tag    'application', media: 'all' %>
+	  <%= csrf_meta_tags %>
+	</head>
+
+	<body>
+
+		<!-- MAIN CONTENT -->
+	  <div class="container">
+	    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+	    <div ui-view></div>
+	  </div>
+
+	  <%= javascript_include_tag 'application' %>
+	</body>
+
 </html>
