@@ -24,7 +24,7 @@ class Api::UsersController < Api::BaseController
       @user ||= User.find(params[:id])
     end
 
-    def users_params
+    def user_params
       params.permit(:username, :email, :password_digest)
     end
 end
